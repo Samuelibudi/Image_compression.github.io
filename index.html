@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Compression Algorithm</title>
+	<title>Image Compression Algorithm</title>
 	<style>
 	   body {
+		   margin: 0;
+		   padding: 0;
+		   background-color: #808080;
+		   background: linear-gradient(to right, #CCCCCC, #333333);
 		   font-family: Arial, sans-serif;
-		   margin: 20px;
+	   }
+
+	   .container {
+		   max-width: 600px;
+		   margin: 25vh 0 0 0;
+		   padding-left: 20px;
 	   }
 
 	   h1 {
-		   text-align: center;
+		   text-align: left;
+		   margin: 0;
+		   padding-bottom: 20px;
 	   }
-	   .container {
-		   max-width: 600px;
-		   margin: 0 auto;
+	   .image-container {
+		   position: fixed;
+		   top: 0;
+		   right: 0;
+		   width: 50%;
+		   height: 100vh;
+		   background-image: url(im_1.jpg);
+		   background-size: cover;
+		   background-position: center;
+		   background-repeat: no-repeat;
+		   z-index: -1;
 	   }
 
-	   .repo-link {
-		   text-align: center;
-		   margin-top: 20px;
+	   .notes {
+		   margin-bottom: 20px;
 	   }
 
 	   .repo-link a {
@@ -38,6 +56,8 @@
 <body>
 	<div class="container">
 		<h1>Image Compression Algorithm</h1>
+		<div class="image-container"></div>
+		<div class="notes">
 		<p>
 			Welcome to my landing page! Here, I showcase my image compression algorithm. This algorithm
 			provides efficient compression whila maintaining high-qulaity images.
@@ -46,6 +66,7 @@
 			To learn more about the algorithm, access the source code, and contribute to its development.
 			Please visit the Github repository.
 		</p>
+		</div>
 		<div class="repo-link">
 			<a href="https://github.com/Samuelibudi/Image_compression.github.io">Visit Github repository</a>
 		</div>
